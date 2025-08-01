@@ -20,7 +20,8 @@
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
   </NavBrand>
   <NavHamburger />
-   <NavUl transition={fly} transitionParams={{ y: -20, duration: 250 }}>
+   <!-- <NavUl transition={fly} transitionParams={{ y: -20, duration: 250 }}> -->
+    <NavUl>
     {#each pages as page}
       <NavLi>
         <a use:link href={page.path} class="block py-2 px-3 text-blue-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
