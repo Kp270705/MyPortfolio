@@ -12,6 +12,7 @@
     { name: "Home", path: "/" },
     { name: "About", path: "/about" }
   ];
+
 </script>
 
 <Navbar>
@@ -20,7 +21,6 @@
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Kunal</span>
   </NavBrand>
   <NavHamburger />
-   <!-- <NavUl transition={fly} transitionParams={{ y: -20, duration: 250 }}> -->
     <NavUl>
     {#each pages as page}
       <NavLi>

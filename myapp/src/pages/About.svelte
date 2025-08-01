@@ -63,8 +63,7 @@
           </p>
           <p class="text-gray-600 leading-relaxed">
             I enjoy working on projects that challenge me to learn new technologies and solve 
-            complex problems. When I'm not coding, you can find me exploring the latest tech trends 
-            or contributing to open-source projects.
+            complex problems. When I'm not coding, you can find me exploring the latest tech trends.
           </p>
         </div>
         <div class="space-y-3">

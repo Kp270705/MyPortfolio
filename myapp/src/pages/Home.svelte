@@ -1,6 +1,8 @@
 <script>
   import { onDestroy } from "svelte";
-  // Note: You'll need to place your actual image in the assets/images folder
+  import { link } from 'svelte-spa-router';
+  
+  // importing static media files: 
   import KunalPathak from "../assets/images/KunalPathak1.png";
   // import KunalPathak from "../assets/images/watch1.webp";
 
@@ -80,12 +82,9 @@
             </div>
 
             <div class="flex flex-wrap gap-4 pt-4">
-              <button class="px-8 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors hover-lift">
-                Get In Touch
-              </button>
-              <button class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition-colors hover-lift">
-                View Portfolio
-              </button>
+              <a href="https://www.linkedin.com/in/kunal-pathak-162929237/"><button class="px-8 py-3 bg-indigo-600 text-font-medium rounded-lg hover:bg-indigo-transition-colors hover-lift">Get in touch</button></a>
+              <a use:link href="/about"><button class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition-colors hover-lift">View Portfolio</button></a>
+              
             </div>
           </div>
         </div>
@@ -109,11 +108,11 @@
             <h4 class="text-lg font-semibold text-gray-800 mb-3">Quick Stats</h4>
             <div class="grid grid-cols-2 gap-4 text-center">
               <div>
-                <p class="text-2xl font-bold text-indigo-600">5+</p>
+                <p class="text-2xl font-bold text-indigo-600">2+</p>
                 <p class="text-sm text-gray-600">Years Experience</p>
               </div>
               <div>
-                <p class="text-2xl font-bold text-indigo-600">50+</p>
+                <p class="text-2xl font-bold text-indigo-600">3+</p>
                 <p class="text-sm text-gray-600">Projects Completed</p>
               </div>
             </div>
