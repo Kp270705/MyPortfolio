@@ -1,0 +1,35 @@
+<script>
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
+  import { fly } from "svelte/transition";
+  import { link } from 'svelte-spa-router';
+
+  import Darkmode from "../../components/Darkmode/Darkmode.svelte";
+
+  // import staric content
+  import Rocket from "../../assets/icons/rocket1.png";
+
+  let pages = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" }
+  ];
+</script>
+
+<Navbar>
+  <NavBrand href="/">
+    <img src={Rocket} class="me-3 h-6 sm:h-9" alt="Logo" />
+    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+  </NavBrand>
+  <NavHamburger />
+   <NavUl transition={fly} transitionParams={{ y: -20, duration: 250 }}>
+    {#each pages as page}
+      <NavLi>
+        <a use:link href={page.path} class="block py-2 px-3 text-blue-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
+          {page.name}
+        </a>
+      </NavLi>
+    {/each}
+    <NavLi>
+        <Darkmode />
+      </NavLi>
+  </NavUl>
+</Navbar>
