@@ -12,9 +12,7 @@
   };
 
   const skills = [
-    "JavaScript", "Python", "Flask", "Svelte", "React", "Node.js",
-    "JWT Authentication", "OAuth", "Git", "Docker", "PostgreSQL", "MongoDB"
-  ];
+    "JavaScript", "Python", "Flask", "Svelte", "JWT Authentication", "OAuth", "Git", ];
 
   const projects = [
     {

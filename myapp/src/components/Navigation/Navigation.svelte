@@ -17,7 +17,7 @@
 <Navbar>
   <NavBrand href="/">
     <img src={Rocket} class="me-3 h-6 sm:h-9" alt="Logo" />
-    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Kunal</span>
   </NavBrand>
   <NavHamburger />
    <!-- <NavUl transition={fly} transitionParams={{ y: -20, duration: 250 }}> -->
