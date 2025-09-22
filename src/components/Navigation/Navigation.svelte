@@ -15,7 +15,7 @@
 
 </script>
 
-<Navbar>
+<Navbar class="fixed top-0 w-full z-50 bg-white/10 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
   <NavBrand href="/">
     <img src={Rocket} class="me-3 h-6 sm:h-9" alt="Logo" />
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Kunal</span>
