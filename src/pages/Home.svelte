@@ -45,23 +45,7 @@
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       isDarkTheme = true;
     }
-    
-    updateTheme();
   });
-
-  function toggleTheme() {
-    isDarkTheme = !isDarkTheme;
-    localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
-    updateTheme();
-  }
-
-  function updateTheme() {
-    if (isDarkTheme) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }
 
   // Call the function to start the rotation
   startLanguageRotation(reactiveWelcome, 2000);
@@ -111,17 +95,10 @@
             </div>
 
             <div class="flex flex-wrap gap-4 pt-4">
-              <a 
-                href="https://www.linkedin.com/in/kunal-pathak-162929237/"
-                class="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-xl hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 hover-lift shadow-lg hover:shadow-xl"
-              >
+              <a  href="https://www.linkedin.com/in/kunal-pathak-162929237/" class="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-xl hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 hover-lift shadow-lg hover:shadow-xl" >
                 Get in touch
               </a>
-              <a 
-                use:link 
-                href="/about"
-                class="px-8 py-3 border-2 border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-400 font-medium rounded-xl hover:bg-indigo-600 dark:hover:bg-indigo-400 hover:text-white transition-all duration-300 hover-lift"
-              >
+              <a  use:link  href="/about" class="px-8 py-3 border-2 border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-400 font-medium rounded-xl hover:bg-indigo-600 dark:hover:bg-indigo-400 hover:text-white transition-all duration-300 hover-lift" >
                 View Portfolio
               </a>
             </div>
